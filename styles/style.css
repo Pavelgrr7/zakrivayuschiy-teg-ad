@@ -20,7 +20,7 @@
   position: fixed;
   inset: 0;
   background-image: var(--background-image);
-  z-index: 1; 
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -119,8 +119,12 @@
 }
 
 @keyframes choose {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(5px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
 }
 
 .section {
@@ -151,7 +155,7 @@
 
 .card__image-wrapper {
   position: relative;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   border-block: 2px solid var(--accent-color);
 }
 
@@ -163,14 +167,30 @@
   object-position: center;
 }
 
-.grayscale-filter { filter: grayscale(0.7); }
-.saturation-filter { filter: saturate(2); }
-.hue-rotate-filter { filter: hue-rotate(90deg); }
-.invert-filter { filter: invert(0.75); }
-.sepia-filter { filter: sepia(1); }
-.brightness-filter { filter: brightness(0.2); }
-.grayscale-saturate-filter { filter: contrast(1.5) brightness(1.2); }
-.contrast-filter { filter: contrast(0.8); }
+.grayscale-filter {
+  filter: grayscale(0.7);
+}
+.saturation-filter {
+  filter: saturate(2);
+}
+.hue-rotate-filter {
+  filter: hue-rotate(90deg);
+}
+.invert-filter {
+  filter: invert(0.75);
+}
+.sepia-filter {
+  filter: sepia(1);
+}
+.brightness-filter {
+  filter: brightness(0.2);
+}
+.grayscale-saturate-filter {
+  filter: contrast(1.5) brightness(1.2);
+}
+.contrast-filter {
+  filter: contrast(0.8);
+}
 
 .image-decoration {
   position: absolute;
@@ -311,7 +331,7 @@
 }
 
 .blend-mode-svg {
-  width: 21px; 
+  width: 21px;
   height: 21px;
   position: relative;
   z-index: 1;
@@ -331,6 +351,8 @@
   color: var(--accent-color);
   gap: 30px;
   transition: opacity 0.3s ease-in-out;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
 }
 
 .dialog:not([open]) {
@@ -345,11 +367,6 @@
 
 .dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-}
-
-.dialog {
-  grid-template-columns: min-content 1fr;
-  align-items: center;
 }
 
 .dialog > svg {
@@ -369,7 +386,7 @@
 }
 
 .dialog__button {
-  grid-column: 1 / -1; 
+  grid-column: 1 / -1;
   width: 100%;
   padding: 12.5px;
   text-transform: uppercase;
