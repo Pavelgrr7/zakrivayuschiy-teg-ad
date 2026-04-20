@@ -358,11 +358,13 @@
       <use class="floppy" href="./images/floppy.svg#floppy"></use>
     </svg>
     <p class="save-dialog__text">
-              Вставьте<br>дискету, чтобы<br>продолжить
-            </p>
-    <button class="button dialog__button" onclick="window['dialog-id'].close()" type="button">
-      <span class="button__text">Oк</span>
-    </button>
+      Вставьте<br>дискету, чтобы<br>продолжить
+    </p>
+    <form method="dialog" class="dialog__form">
+      <button class="button dialog__button" type="submit">
+        <span class="button__text">Ок</span>
+      </button>
+    </form>
   </dialog>
 </footer>
 <script src="./scripts/like.js"></script>

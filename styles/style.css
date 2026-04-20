@@ -385,8 +385,12 @@
   margin: 0;
 }
 
-.dialog__button {
+.dialog__form {
   grid-column: 1 / -1;
+  width: 100%;
+}
+
+.dialog__button {
   width: 100%;
   padding: 12.5px;
   text-transform: uppercase;
